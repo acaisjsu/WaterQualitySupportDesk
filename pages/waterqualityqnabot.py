@@ -4,7 +4,7 @@ from openai import OpenAI
 import pandas as pd
 import os
 
-openai.api_key = os.environ
+openai.api_key = os.environ["OPENAI_API_KEY"]
 client = OpenAI() 
 
 st.title("Water Quality Q&A Bot :material/robot_2:")

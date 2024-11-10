@@ -15,7 +15,7 @@ st.divider()
 data = pd.read_csv('pages/data/san_jose_water_quality_data.csv')
 
 st.write(data.head())
-openai.api_key = os.environ
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 client = OpenAI()
 
